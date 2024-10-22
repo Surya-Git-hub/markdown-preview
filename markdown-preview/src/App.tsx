@@ -15,7 +15,7 @@ const convertMarkdownToHtml = async (
   markdown: string
 ): Promise<ConvertResponse> => {
   const response = await axios.post<ConvertResponse>(
-    "http://localhost:5000/api/convert",
+    import.meta.env.VITE_API_URL,
     { text: markdown }
   );
   return response.data;
