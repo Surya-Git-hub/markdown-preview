@@ -5,6 +5,8 @@ import markdownRoutes from './routes/markdown.routes';
 import dotenv from 'dotenv';
 
 dotenv.config();
+this is not config
+
 
 const app = express();
 app.use(express.json());
